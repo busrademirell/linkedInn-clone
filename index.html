@@ -47,6 +47,15 @@
             background-color: #000;
         }
 
+        .icon-hover {
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .icon-hover:hover {
+            background-color: #e4e6eb;
+        }
+
         .search-box {
             position: relative;
             width: 280px;
@@ -131,6 +140,30 @@
 
         .links-card .link-item a:hover {
             text-decoration: underline;
+        }
+
+        .post-input {
+            border: 1px solid #d3d3d3;
+            border-radius: 25px;
+            padding: 10px 16px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .post-input:hover {
+            background-color: #f3f2ef;
+        }
+
+        .post-actions .item {
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+
+        .post-actions .item:hover {
+            background-color: #f3f3f3;
         }
         footer {
             font-size: small;
@@ -257,6 +290,37 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- content -->
+                <div class="col-6 col-md-6">
+                    <div class="card">
+                        <div class="card-body" style="padding:8px 12px;">
+                            <div class="d-flex justify-content-between p-1 gap-1">
+                                <img src="img/profile.jpg" class="rounded-circle" width="45" height="45"
+                                    alt="profile icon">
+                                <input type="text" class="post-input" placeholder="Start a post...">
+                            </div>
+
+                            <div class="post-actions d-flex align-items-center justify-content-between gap-3 p-2"
+                                style="padding:6px 0; gap:15px;">
+                                <div class="item d-flex align-items-center gap-2">
+                                    <img src="img/video.png" width="20" height="20" alt="">
+                                    <p class="mb-0">Video</p>
+                                </div>
+
+                                <div class="item d-flex align-items-center gap-2">
+                                    <img src="img/image.png" width="20" height="20" alt="">
+                                    <p class="mb-0">Photograph</p>
+                                </div>
+
+                                <div class="item d-flex align-items-center gap-2">
+                                    <img src="img/writing.png" width="20" height="20" alt="">
+                                    <p class="mb-0">Write an article</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
                 </div>
                 <!-- news -->
                 <div class="col-3 col-md-3">
