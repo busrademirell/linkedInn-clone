@@ -54,7 +54,6 @@
             align-items: center;
             border-radius: 8px;
             margin-left: -10px;
-
         }
 
         .search-box input {
@@ -110,6 +109,29 @@
             font-size: 14px;
         }
 
+        .profile-card .profile-count {
+            color: #0A66C2;
+        }
+
+        .profile-card .profile-link {
+            font-size: 14px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .profile-card .profile-link:hover {
+            text-decoration: underline;
+        }
+
+        .links-card .link-item a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .links-card .link-item a:hover {
+            text-decoration: underline;
+        }
         footer {
             font-size: small;
             background: #ffffff;
@@ -186,6 +208,56 @@
             </div>
         </div>
     </nav>
+
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <!-- first card -->
+                <div class="col-3 col-md-3">
+                    <div class="card">
+                        <div class="card-header" style="padding: 0;">
+                            <img src="img/background.jpg" alt="image-icon"
+                                style="width: 100%;  height: 60px; display: block; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <img src="img/profile.jpg" class="rounded-circle mb-2 profile-img" width="70" height="70"
+                                alt="profile-ikon">
+                            <h5 class="card-title mb-1">Büşra Demirel</h5>
+                            <p class="card-text text-muted mb-1">Software Developer</p>
+                            <p class="text-muted small mb-0">Ankara</p>
+                        </div>
+                    </div>
+                    <div class="card profile-card my-2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <a href="#" class="profile-link">Profile viewers</a>
+                                <span class="profile-count">50</span>
+                            </div>
+                            <a href="#" class="profile-link">View all analytics</a>
+                        </div>
+                    </div>
+                    <div class="card my-2 links-card">
+                        <div class="card-body p-2">
+                            <div class="link-item d-flex align-items-center p-2">
+                                <img src="img/save.png" width="15" height="15" alt="">
+                                <a href="#" class="ms-2">Saved items</a>
+                            </div>
+                            <div class="link-item d-flex align-items-center p-2">
+                                <img src="img/network.png" width="15" height="15" alt="">
+                                <a href="#" class="ms-2">Groups</a>
+                            </div>
+                            <div class="link-item d-flex align-items-center p-2">
+                                <img src="img/news.png" width="15" height="15" alt="">
+                                <a href="#" class="ms-2">Newsletters</a>
+                            </div>
+                            <div class="link-item d-flex align-items-center p-2">
+                                <img src="img/events.png" width="15" height="15" alt="">
+                                <a href="#" class="ms-2">Events</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- news -->
                 <div class="col-3 col-md-3">
                     <div class="card">
