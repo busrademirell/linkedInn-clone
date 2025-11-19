@@ -1,11 +1,25 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-light-gray: #ddd;
+  --color-gray: #666;
+  --color-body-bg: #f3f2ef;
+  --color-blue: #0a66c2;
+  --color-gray-secondary: #6c757d;
+  --color-bg-light: #f3f3f3;
+  --color-border-gray: #d3d3d3;
+  --color-gray-dark: #333;
+  --color-hover: #e4e6eb;
+  --navbar-height: 54px;
+}
 .navbar {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-light-gray);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  height: 54px;
+  height: var(--navbar-height);
   padding: 6px 0;
 }
 
@@ -14,7 +28,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #666;
+  color: var(--color-gray);
   text-decoration: none;
   font-size: 12px;
   position: relative;
@@ -26,7 +40,7 @@
 }
 
 .navbar a:hover {
-  color: #000;
+  color: var(--color-black);
 }
 
 .navbar a.active::after {
@@ -36,7 +50,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: var(--color-black);
 }
 
 .icon-hover {
@@ -45,7 +59,7 @@
 }
 
 .icon-hover:hover {
-  background-color: #e4e6eb;
+  background-color: var(--color-hover);
 }
 
 .search-box {
@@ -71,27 +85,30 @@
   width: 20px;
   height: 20px;
 }
+  border-bottom: 1px solid var(--color-light-gray);
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-light-gray);
 
 .nav-divider::after {
   content: "";
   display: inline-block;
   width: 1px;
   height: 40px;
-  background-color: #ddd;
+  background-color: var(--color-light-gray);
   margin: 0 10px;
 }
 
 body {
-  margin-top: 80px;
-  background-color: #f3f2ef;
+  margin-top: calc(var(--navbar-height) + 20px);
+  background-color: var(--color-body-bg);
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .card-body ul li:hover {
-  background-color: #f3f2ef;
+  background-color: var(--color-body-bg);
   cursor: pointer;
 }
 
@@ -102,7 +119,7 @@ body {
 
 .card-body ul li p {
   margin-bottom: 0;
-  color: #666;
+  color: var(--color-gray);
   font-size: 13px;
 }
 
@@ -111,12 +128,12 @@ body {
 }
 
 .profile-card .profile-count {
-  color: #0a66c2;
+  color: var(--color-blue);
 }
 
 .profile-card .profile-link {
   font-size: 14px;
-  color: #000;
+  color: var(--color-black);
   text-decoration: none;
 }
 
@@ -125,7 +142,7 @@ body {
 }
 
 .links-card .link-item a {
-  color: #333;
+  color: var(--color-gray-dark);
   text-decoration: none;
   font-size: 14px;
 }
@@ -135,7 +152,7 @@ body {
 }
 
 .post-input {
-  border: 1px solid #d3d3d3;
+  border: 1px solid var(--color-border-gray);
   border-radius: 25px;
   padding: 10px 16px;
   width: 100%;
@@ -144,7 +161,7 @@ body {
 }
 
 .post-input:hover {
-  background-color: #f3f2ef;
+  background-color: var(--color-body-bg);
 }
 
 .post-actions .item {
@@ -155,16 +172,16 @@ body {
 }
 
 .post-actions .item:hover {
-  background-color: #f3f3f3;
+  background-color: var(--color-bg-light);
 }
 
 .user-name {
-  color: #000;
+  color: var(--color-black);
   text-decoration: none;
 }
 
 .user-name:hover {
-  color: #0a66c2;
+  color: var(--color-blue);
   text-decoration: underline;
 }
 
@@ -201,46 +218,42 @@ body {
   margin-bottom: 30px;
 }
 
-.card-header-main {
-  background-color: #ffffff;
-}
-
 .post {
   width: 100%;
   height: 300px;
 }
 
 .like-comment-section a {
-  color: #6c757d;
+  color: var(--color-gray-secondary);
   text-decoration: none;
 }
 
 .like-comment-section a:hover {
   text-decoration: underline;
-  color: #0a66c2;
+  color: var(--color-blue);
 }
 
 .card-footer-main {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 footer {
   font-size: small;
-  background: #ffffff;
+  background: var(--color-white);
 }
 
 footer a:hover {
   text-decoration: underline;
-  color: #0a66c2;
+  color: var(--color-blue);
 }
 
 .card-footer a {
-  color: #6c757d;
+  color: var(--color-gray-secondary);
   text-decoration: none;
   margin-right: 10px;
 }
 
 .card-footer a:hover {
   text-decoration: underline;
-  color: #0a66c2;
+  color: var(--color-blue);
 }
