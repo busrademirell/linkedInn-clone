@@ -632,37 +632,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-2 offset-md-1 my-5 ms-1 text-muted">
-                        <div class="dropdown">
-                            Choose a language
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
-                                data-bs-toggle="dropdown" aria-expanded="false"
-                                style="background: none; border: 1px solid #ddd; color: #333;">
-                                English
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="#">English</a></li>
-                                <li><a class="dropdown-item" href="#">Spanish</a></li>
-                                <li><a class="dropdown-item" href="#">French</a></li>
-                                <li><a class="dropdown-item" href="#">German</a></li>
-                                <li><a class="dropdown-item" href="#">Italian</a></li>
-                                <li><a class="dropdown-item" href="#">Portuguese</a></li>
-                                <li><a class="dropdown-item" href="#">Russian</a></li>
-                                <li><a class="dropdown-item" href="#">Chinese (Simplified)</a></li>
-                                <li><a class="dropdown-item" href="#">Chinese (Traditional)</a></li>
-                                <li><a class="dropdown-item" href="#">Japanese</a></li>
-                                <li><a class="dropdown-item" href="#">Korean</a></li>
-                                <li><a class="dropdown-item" href="#">Arabic</a></li>
-                                <li><a class="dropdown-item" href="#">Turkish</a></li>
-                                <li><a class="dropdown-item" href="#">Hindi</a></li>
-                                <li><a class="dropdown-item" href="#">Bengali</a></li>
-                                <li><a class="dropdown-item" href="#">Persian</a></li>
-                                <li><a class="dropdown-item" href="#">Swedish</a></li>
-                                <li><a class="dropdown-item" href="#">Norwegian</a></li>
-                                <li><a class="dropdown-item" href="#">Dutch</a></li>
-                                <li><a class="dropdown-item" href="#">Polish</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-12 col-md-2 offset-md-1 my-5 text-muted">
+                        <label for="languageSelect" class="form-label text-muted small">Choose a language</label>
+                        <select class="form-select form-select-sm language-selector-btn" id="languageSelect"
+                            aria-label="Language selector">
+                            <option selected value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Turkish">Turkish</option>
+                        </select>
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 text-muted">
