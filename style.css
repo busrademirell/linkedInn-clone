@@ -47,10 +47,6 @@
   height: 35px;
 }
 
-.navbar a:hover {
-  color: var(--color-black);
-}
-
 .navbar a.active::after {
   content: "";
   position: absolute;
@@ -61,13 +57,6 @@
   background-color: var(--color-black);
 }
 
-.icon-hover {
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.icon-hover:hover {
-  background-color: var(--color-hover);
 }
 
 .search-box {
@@ -85,13 +74,6 @@
   font-size: 14px;
 }
 
-.search-box img {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
 }
   border-bottom: 1px solid var(--color-light-gray);
   background-color: var(--color-white);
@@ -109,10 +91,6 @@
 body {
   margin-top: calc(var(--navbar-height) + 20px);
   background-color: var(--color-body-bg);
-}
-
-.card {
-  background-color: var(--color-white);
 }
 
 .card-body ul li:hover {
