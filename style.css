@@ -56,16 +56,16 @@
   height: 2px;
   background-color: var(--color-black);
 }
-
+.nav-separator {
+  height: 40px;
 }
-
 .search-box {
   position: relative;
-  width: 280px;
+  min-width: 280px;
+  width: 100%;
   display: flex;
   align-items: center;
-  border-radius: 8px;
-  margin-left: -10px;
+  border-radius: 4px;
 }
 
 .search-box input {
