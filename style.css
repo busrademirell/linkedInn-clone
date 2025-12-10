@@ -265,3 +265,9 @@ footer a:hover {
   color: var(--color-black);
   border-color: var(--color-gray);
 }
+
+.btn-news-end {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
