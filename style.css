@@ -96,13 +96,13 @@
   background-color: var(--color-white);
 }
 
-.nav-divider::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 40px;
-  background-color: var(--color-light-gray);
-  margin: 0 10px;
+.card-footer-main {
+  border-top: 1px solid var(--color-light-gray);
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.featured-title {
+  margin-bottom: 2px;
 }
 
 body {
