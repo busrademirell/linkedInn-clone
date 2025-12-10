@@ -26,35 +26,71 @@
                 </div>
             </div>
 
-            <div class="d-flex gap-3">
-                <a href="#" class="navbar-item active"><img src="img/home.png" alt="home icon" width="24" height="24">
-                    Home Page</a>
-                <a href="#" class="navbar-item"><img src="img/network.png" alt="network icon" width="24" height="24">
-                    My stream</a>
-                <a href="#" class="navbar-item"><img src="img/suitcase.png" alt="discover icon" width="24" height="24">
-                    Job Postings</a>
-                <a href="#" class="navbar-item"><img src="img/messanger.png" alt="messanger icon" width="24"
-                        height="24">
-                    Messaging</a>
-                <a href="#" class="navbar-item"><img src="img/notification.png" alt="notification icon" width="24"
-                        height="24">
-                    Notifications</a>
-                <div class="d-flex gap-3 nav-divider">
-                    <div class="dropdown">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                        <a class="navbar-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false"><img src="img/profile.jpg" alt="profile icon" width="24" height="24">
-                            I</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Settings & Privacy</a></li>
-                            <li><a class="dropdown-item" href="#">Help</a></li>
-                            <li><a class="dropdown-item" href="#">Language</a></li>
-                            <li><a class="dropdown-item" href="#">Manage</a></li>
-                            <li><a class="dropdown-item" href="#">Posts & Activity</a></li>
-                            <li><a class="dropdown-item" href="#">Job Posting Account</a></li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbar-nav d-flex align-items-center gap-3 mt-3 mt-lg-0">
+
+                    <li class="nav-item">
+                        <a href="#"
+                            class="navbar-item active d-flex flex-column align-items-center text-decoration-none text-secondary">
+                            <i class="bi bi-house-door-fill fs-4"></i>
+                            <span class="small">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#"
+                            class="navbar-item d-flex flex-column align-items-center text-decoration-none text-secondary">
+                            <i class="bi bi-people-fill fs-4"></i>
+                            <span class="small">My Network</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#"
+                            class="navbar-item d-flex flex-column align-items-center text-decoration-none text-secondary">
+                            <i class="bi bi-briefcase-fill fs-4"></i>
+                            <span class="small">Jobs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#"
+                            class="navbar-item d-flex flex-column align-items-center text-decoration-none text-secondary">
+                            <i class="bi bi-chat-dots-fill fs-4"></i>
+                            <span class="small">Messaging</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#"
+                            class="navbar-item d-flex flex-column align-items-center text-decoration-none text-secondary">
+                            <i class="bi bi-bell-fill fs-4"></i>
+                            <span class="small">Notifications</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex flex-column align-items-center text-secondary"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/profile.jpg" class="rounded-circle" width="24" height="24" alt="Profile">
+                            <span class="small">Me</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">View Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="#">Sign Out</a></li>
                         </ul>
-                    </div>
                 </div>
                 <div class="d-flex gap-3">
                     <div class="dropdown">
